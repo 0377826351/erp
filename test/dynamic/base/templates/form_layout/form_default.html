@@ -1,0 +1,15 @@
+{% for item in form %}
+    {% if item.field.widget.input_type == 'hidden' %}
+        {{ item }}
+    {% else %}
+        <div class="{{ item.field.widget.config.box_class }}" data-name="{{ item.name }}">
+            <div class="form-group">
+                {% if item.label %}<label class="form-label">{{ item.label }}{% if item.field.required %} <span class="text-danger">*</span>{% endif %}</label>{% endif %}
+                {{ item }}
+                {% if item.help_text %}
+                    <div class="form-control-text">{{ item.help_text }}</div>
+                {% endif %}
+            </div>
+        </div>
+    {% endif %}
+{% endfor %}

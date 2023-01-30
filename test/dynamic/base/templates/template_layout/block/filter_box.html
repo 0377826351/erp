@@ -1,0 +1,15 @@
+<div class="filter-box">
+    <form action="" method="get" class="form-filter">
+        <div class="row">
+            {{ form }}
+            <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                {% if button_filter %}
+                    <button type="submit" class="btn btn-primary action-btn">Lọc</button>
+                {% endif %}
+                {% if button_delete %}
+                    <button type="restart" class="btn btn-secondary action-btn">Xoá</button>
+                {% endif %}
+            </div>
+        </div>
+    </form>
+</div>

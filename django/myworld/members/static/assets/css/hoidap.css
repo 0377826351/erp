@@ -1,0 +1,99 @@
+.btn-search-question {
+    background-color: white !important;
+    display: flex;
+    justify-content:center;
+    border-radius:30px 0 0 30px;
+    padding-left: 10px !important;
+}
+
+.btn-search-question svg {
+    align-self: center;
+}
+
+.input-search {
+    border-radius:0 30px 30px 0 !important;
+    border: 0 !important;
+    padding-left: 5px !important;
+}
+
+.title-featured {
+    background-size: cover !important;
+}
+
+.sb-help-header {
+    padding-top: 15px;
+    padding-left: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #007893;
+    text-transform: uppercase;
+}
+
+.hr {
+    height: 3px;
+    width: 100px;
+    background: #f7af10;
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+li.menu-help-item {
+    list-style: square;
+    color: blue;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.list-content-q li {
+    list-style: square;
+}
+
+.item-faq {
+    border: 1px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.faq-name {
+    position: relative;
+}
+.faq-name .fa-solid {
+    position: absolute;
+    top: 4px;
+    left: 11px;
+    background-color: none;
+    color: #007893;
+}
+
+.page-title-q {
+    color: #007893;
+}
+
+@media only screen and (max-width: 768px) {
+    .sb-help-header {
+        padding: 10px; 
+    }
+    .page-title-q {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 0px !important;
+        font-size:40px;
+    }
+    .list-faq {
+        margin-left: 0px !important;
+    }
+    p.text-center.pt-4.fw-bold {
+        font-size:38px;
+    }
+    .input-group.input-group-lg.mb-3 {
+        width: 110%;
+    }
+    .faq-name .fa-solid {
+        top: 6px;
+        left: 14px;
+    }
+}

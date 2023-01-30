@@ -1,0 +1,7 @@
+<div class="flash-messages mb-2">
+    {% for tag in messages %}
+        <ul class="list-unstyled my-1 alert alert-{{ tag }}">
+            {% for msg in messages|get_item:tag %} <li>{{ msg }}</li> {% endfor %}
+        </ul>
+    {% endfor %}
+</div>

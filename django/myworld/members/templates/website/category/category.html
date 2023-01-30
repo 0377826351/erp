@@ -1,0 +1,61 @@
+{% extends 'default.html' %}
+{% load static %}
+{% load custom_tags %}
+{% block content %}
+    <div class="title-featured">
+        <div class="container">
+            <div class="widget-header">
+                <div class="widget-title">
+                    <p class="text-center pt-3 fw-bold">{{ title }}</p>
+                    <img src="{% static 'assets/img/icon-wave-white.svg' %}" class="rounded mx-auto d-block pb-4" alt="wave">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <div class="container">
+            <nav class="breadcrumb">
+                <span>
+                    <span>
+                        <a href="/home">Home</a>
+                        >>
+                        <span class="breadcrumb-last">{{ title }}</span>
+                    </span>
+                </span>
+            </nav>
+            <h1>{{ title }}</h1>
+            <div class="tab-content mt-3" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                    <div class="row">
+                        {% show_post page_obj %}
+                    </div>
+                </div>
+            </div>
+            <ul class="pagination page-numbers d-flex justify-content-center mt-3" role="navigation">
+                    {% if page_obj.has_previous %}
+                        <li class="page-item"><a class="page-link" href="{{ request.META.QUERY_STRING|url:page_obj.previous_page_number }}">&laquo; Trang Trước</a></li>
+                    {% else %}
+                        <li class="d-none page-item"><span class="page-link">&laquo; Previous</span></li>
+                    {% endif %}
+                    {% for i in page_range %}
+                        {% if page_obj.number == i %}
+                            <li class="active page-item"><span class="page-link">{{ i }} </span></li>
+                        {% else %}
+                            {% if i == page_obj.paginator.ELLIPSIS %}
+                                <li class="page-item"><span class="page-link">{{ i }}</span></li>
+                            {% else %}
+                                <li class="page-item"><a class="page-link" href="{{ request.META.QUERY_STRING|url:i }}">{{ i }}</a></li>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                    {% if page_obj.has_next %}
+                        <li class="page-item"><a class="page-link" href="{{ request.META.QUERY_STRING|url:page_obj.next_page_number }}">Trang Sau &raquo;</a></li>
+                    {% else %}
+                        <li class="d-none page-item"><span class="page-link">Next &raquo;</span></li>
+                    {% endif %}
+            </ul>
+        </div>
+    </div>
+{% endblock %} 
+

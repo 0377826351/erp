@@ -1,0 +1,8 @@
+<div class="">
+    {% if widget.value %}
+        <div class="ratio ratio-4x3">
+            <iframe class="embed-responsive-item" src="{{ widget.value|get_src_video }}" {% include "django/forms/widgets/attrs.html" %}> </iframe>
+        </div>
+    {% endif %}
+    <input type="file" name="upload_{{widget.name}}" class="form-control" id="id_upload_video" accept="video/*" {% if widget.attrs.multiple %}multiple{% endif %}>
+</div>

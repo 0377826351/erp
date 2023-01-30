@@ -1,0 +1,59 @@
+{% extends 'default.html' %}
+{% load alert %}
+{% load components %}
+{% block content %}
+
+{% if config_page_header %}
+    {% render_page_header config_page_header %}
+{% endif %}
+{% csrf_token %}
+<div class="page-content py-3">
+    <div class="container-fluid">
+        <div class="card border-0">
+            <div class="card-body">
+                {% if messages %} {% flash_message messages %} {% endif %}
+                <div class="table-content table-responsive mb-3">
+                    <table class="table-bordered table table-hover table-nowrap mb-0" id="listItems" url-name="{% url url_name %}" delete-url="{% url url_name|add:'.delete' %}">
+                        <thead class="table-light">
+                            <tr>
+                                <th class="width-30"><input class="form-check-input table-check-all" type="checkbox" /></th>
+                                <th class="width-30">#</th>
+                                <th class="width-80">Hành động</th> 
+                                <th>Id Int</th>
+                                <th>Tên</th> 
+                                <th>Danh mục cha</th>
+                                <th>Cấp độ</th>
+                                <th>Chỉ mục đa cấp</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% if items %}
+                                {% for item in items %}
+                                    <tr data-id="id_{{ item.id }}">
+                                        <td><input name="ids[]" class="form-check-input table-check-item" value="{{ item.id }}" type="checkbox" /></td>
+                                        <td>{{ forloop.counter }}</td>
+                                        <td>
+                                            <a href="{% url url_name|add:'.change' id=item.id %}" class="action-icon"><i class="fa-solid fa-pen-to-square"></i></a>
+                                            <a class="action-icon action-delete-item delete-confirm" value="{{ item.id }}" data-bs-toggle="modal" data-bs-target="#confirmDeleteModel"><i class="fa-solid fa-trash"></i></a>
+                                        </td>
+                                        <td>{{ item.id_int }}</td>
+                                        <td><a href="{% url url_name|add:'.change' id=item.id %}" class="fw-bold">{{ item.multi_name }}</a></td>
+                                        <td>{{ item.parent_id }}</td>
+                                        <td>{{ item.level }}</td>
+                                        <td>{{ item.multi_index }}</td>
+                                    </tr>
+                                {% endfor %}
+                            {% else %}
+                                <tr><td colspan="100%">Không có dữ liệu.</td></tr>
+                            {% endif %}
+                        </tbody>
+                    </table>
+                </div> 
+            </div>        
+        </div>
+    </div>
+</div>
+{% render_confirm_dialog id="confirmDeleteModel" type="delete" %}
+
+{% endblock content %}
+

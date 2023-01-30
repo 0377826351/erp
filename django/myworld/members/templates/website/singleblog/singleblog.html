@@ -1,0 +1,152 @@
+{% extends 'default.html' %}
+{% load static %}
+{% load custom_tags %}
+{% block content %}
+    <div class="title-featured">
+        <div class="container">
+            <div class="widget-header">
+                <div class="widget-title">
+                    <p class="text-center pt-3 fw-bold">BLOG</p>
+                    <img src="{% static 'assets/img/icon-wave-white.svg' %}" class="rounded mx-auto d-block pb-4" alt="wave">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <div class="container">
+            <nav class="breadcrumb">
+                <span>
+                    <span>
+                        <a href="/home">Home</a>
+                        >>
+                        <span class="breadcrumb-last">{{ obj_cate.name }} >> {{ obj.title }}</span>
+                    </span>
+                </span>
+            </nav>
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="single-post-title">
+                        {{ title }}
+                    </h1>
+                    <div class="single-post-meta row d-flex justify-content-center">
+                        <div class="col-8 col-md-7 align-items-center">
+                            <img src="{% static 'assets/img/nts.png' %}"alt="nts">
+                            <a href="https://weupgroup.vn/author/sennt/">
+                                {{ obj.created }}
+                            </a>
+                            <span>
+                                <span class="update-time">
+                                    {{ obj.created_at }}
+                                </span>
+                                <span class="number-comment">
+                                    <a href="#comments">
+                                        <i class="fa-solid fa-comment"></i>
+                                        <span>0</span></a>            
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-4 col-md-5">
+                            <div class="review">
+                                <div >
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <div class="kksr-legend">
+                                            5/5 - (8 bình chọn)    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        {{ obj.content }}
+                </div>
+                <div class="col-md-4 sidebar">
+                    <div class="widget-post sticky mt-5">
+                        <div class="widget-header">
+                            <div class="widget-title-sidebar">Tin Đọc Nhiều</div>
+                        </div>
+                        <div class="widget-content">
+                            <div class="row">
+                                <div class="post col-6">
+                                    <a href="https://weupgroup.vn/weup-group-to-chuc-chuong-trinh-talkshow-khoi-nguon-y-tuong/">
+                                        <img src="{% static 'assets/img/auto-group-1.png' %}" alt="đasa">
+                                    </a>
+                                </div>
+                                <span class="h5 post-title col-6">
+                                    <a href="https://weupgroup.vn/weup-group-to-chuc-chuong-trinh-talkshow-khoi-nguon-y-tuong/">
+                                        WeUp Group tổ chức chương trình  WeUp Open Talk: “ Khơi nguồn ý tưởng – Dẫn lối thành công”
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="row">
+                                <div class="post col-6">
+                                    <a href="https://weupgroup.vn/weup-group-to-chuc-chuong-trinh-talkshow-khoi-nguon-y-tuong/">
+                                        <img src="{% static 'assets/img/auto-group-1.png' %}" alt="đasa">
+                                    </a>
+                                </div>
+                                <span class="h5 post-title col-6">
+                                    <a href="https://weupgroup.vn/weup-group-to-chuc-chuong-trinh-talkshow-khoi-nguon-y-tuong/">
+                                        WeUp Group tổ chức chương trình  WeUp Open Talk: “ Khơi nguồn ý tưởng – Dẫn lối thành công”
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="row">
+                                <div class="post col-6">
+                                    <a href="https://weupgroup.vn/weup-group-to-chuc-chuong-trinh-talkshow-khoi-nguon-y-tuong/">
+                                        <img src="{% static 'assets/img/auto-group-1.png' %}" alt="đasa">
+                                    </a>
+                                </div>
+                                <span class="h5 post-title col-6">
+                                    <a href="https://weupgroup.vn/weup-group-to-chuc-chuong-trinh-talkshow-khoi-nguon-y-tuong/">
+                                        WeUp Group tổ chức chương trình  WeUp Open Talk: “ Khơi nguồn ý tưởng – Dẫn lối thành công”
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="row">
+                                <div class="post col-6">
+                                    <a href="https://weupgroup.vn/weup-group-to-chuc-chuong-trinh-talkshow-khoi-nguon-y-tuong/">
+                                        <img src="{% static 'assets/img/auto-group-1.png' %}" alt="đasa">
+                                    </a>
+                                </div>
+                                <span class="h5 post-title col-6">
+                                    <a href="https://weupgroup.vn/weup-group-to-chuc-chuong-trinh-talkshow-khoi-nguon-y-tuong/">
+                                        WeUp Group tổ chức chương trình  WeUp Open Talk: “ Khơi nguồn ý tưởng – Dẫn lối thành công”
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="related-post">
+                        <div class="related-title">
+                            <p class="pt-4 fw-bold">TIN KHÁC</p>
+                            <img src="{% static 'assets/img/icon-wave.svg' %}" class="rounded d-block pb-5" alt="wave">
+                        </div>
+                    </div>
+                    <div class="row">
+                        {% comment %} {% for post in list_post|slice:":6" %}
+                        <div class="col-12 col-lg-4">
+                            <div class="post-blog">
+                                <a href="/bai-viet/{{ post.alias_article }}-{{post.id}}">
+                                    <img width="400" height="230" src="{% static 'assets/img/weup-du-lich-he-2022-17-min-350x230.jpg' %}" alt="dulich-2017" >
+                                </a>
+                                <h5 class="post-title pt-3 ">
+                                    <a href="/bai-viet/{{ post.alias_article }}-{{post.id}}" class="text-dark">{{ post.title }}</a>
+                                </h5>
+                                <div class="post-excerpt p-0">
+                                    {{ post.content }}
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %} {% endcomment %}
+                        {% show_post list_post %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %} 

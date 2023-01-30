@@ -1,0 +1,15 @@
+.item_support.border:hover{
+    border-color: blue !important;
+    border-width: 2px !important;
+}
+
+.contact .page-footer {
+    margin-top: 0 !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .send-info {
+        display:flex;
+        justify-content: center !important;
+    }
+}

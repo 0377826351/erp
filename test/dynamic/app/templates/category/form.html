@@ -1,0 +1,28 @@
+{% extends 'default.html' %}
+{% load validate %}
+{% load components %}
+{% block content %}
+
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% if config_page_header %}
+        {% render_page_header config_page_header %}
+    {% endif %}
+    <div class="page-content py-3">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-xl-10 col-xxl-8">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            {% if form.errors %} {% validate_tag form=form %} {% endif %}
+                            <div class="row">
+                                {{ form }}
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock %}

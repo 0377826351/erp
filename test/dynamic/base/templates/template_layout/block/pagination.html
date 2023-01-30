@@ -1,0 +1,43 @@
+{% if items.paginator.count %}
+    <div class="table-pagination d-flex justify-content-between align-items-center">
+        <div class="pagination-detail d-flex justify-content-between align-items-center">
+            <div class="items-per-page me-3">
+                <div class="btn-group dropdown dropup">
+                    <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        <span class="page-size"> {{ get_data.per_page }} </span>
+                        <span class="caret"></span>
+                    </button>
+                    <div class="dropdown-menu">
+                        {% for number in pagination.per_page_options %}
+                            <a class="dropdown-item {% if number == get_data.per_page|add:'0' %}active{% endif %}" href="javascript:changePerPage({{number}})">{{number}}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <span class="pagination-info"> {{ items.start_index }}-{{ items.end_index }}/{{ items.paginator.count }} </span>
+        </div>
+        {% if items and items.paginator.num_pages > 1 %}
+        <div class="pagination-page">
+            <ul class="pagination mb-0">
+                {% if items.has_previous %}
+                    <li class="page-item"> <a class="page-link shadow-none border-0 rounded-pill" href="{% url url_name|add:'.page' page=1 %}"><small><i class="fa-solid fa-angles-left"></i></small></a> </li>
+                    <li class="page-item"> <a class="page-link shadow-none border-0 rounded-pill" href="{% url url_name|add:'.page' page=items.previous_page_number %}"><small><i class="fa-solid fa-angle-left"></i></small></a> </li>
+                {% endif %}
+                {% for i in page_range %}
+                    {% if items.number == i %}
+                        <li class="page-item active"> <a class="page-link shadow-none border-0 rounded-pill" href="javascript:void(0)"> {{ i }} </a> </li>
+                    {% elif i == items.paginator.ELLIPSIS %}
+                        <li class="page-item"> <span class="d-inline-block px-1" href="javascript:void(0)">{{ items.paginator.ELLIPSIS }}</span> </li>
+                    {% else %}
+                        <li class="page-item"> <a class="page-link shadow-none border-0 rounded-pill" href="{% url url_name|add:'.page' page=i %}">{{ i }}</a> </li>
+                    {% endif %}
+                {% endfor %}
+                {% if items.has_next %}
+                    <li class="page-item page-next"><a class="page-link shadow-none border-0 rounded-pill" href="{% url url_name|add:'.page' page=items.next_page_number %}"><small><i class="fa-solid fa-angle-right"></i></small></a></li>
+                    <li class="page-item page-next"><a class="page-link shadow-none border-0 rounded-pill" href="{% url url_name|add:'.page' page=items.paginator.num_pages %}"><small><i class="fa-solid fa-angles-right"></i></small></a></li>
+                {% endif %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+{% endif %}

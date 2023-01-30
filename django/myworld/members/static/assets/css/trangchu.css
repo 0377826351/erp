@@ -1,0 +1,262 @@
+.btn-banner:hover, .legend2:hover {background-color:#007893; border:none}
+
+.btn-product:hover {background-color:#007893; border:none;color: white;font-weight: bold}
+
+.post-title:hover a {color: #007893 !important}
+
+.item-usp.text-center.shadow:hover  {
+    box-shadow: 0 1rem 1rem rgba(0,0,0,0.24) !important;
+}
+.item-usp {
+    height: 85%;
+}
+
+.solution-element:hover {
+    transform: scale(1.1);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.24) !important;
+}
+
+.partner-thumnail:hover {
+    transform: scale(1.1);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.24) !important;
+}
+
+.home-banner {
+    background-image: url("../img/bg-banner.jpg");
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+}
+
+.list-info li {
+    list-style: none;
+}
+
+.banner-title p {
+    font-size:50px;
+    font-weight: 700;
+    line-height:60px;
+}
+.item-slide {
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.item-featured {
+    padding-top:30px;
+    padding-bottom:15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    height:100%;
+}
+.icon-featured {
+    padding-bottom: 15px;
+}
+.desc-featured {
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 15px;
+    color:slategray;
+}
+.text-right {
+    text-align: right;
+}
+
+.service-content {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.solution-element {
+    transition: all 0.3s;
+}
+.solution-thumnail {
+    margin-top:20px;
+}
+
+a .solution-name {
+    top:100px;
+    color:black;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+p.content-register {
+    font-size:34px;
+    font-weight: bold;
+    color:white;
+}
+
+.home-register , .home-about , .home-product , .home-service, .home-featured,.home-blog,.home-customer{
+    margin-top:40px;
+    margin-bottom:40px;
+}
+
+fieldset {
+    border: 1px dashed #007893;
+    border-radius: 15px;
+    padding: 0px 30px 20px 50px;
+    /* position: relative; */
+}
+
+.legend2 {
+    line-height:1.2em;
+    margin-bottom: -60px;
+  }
+
+p.content-home-about {
+    margin-top: 16px;
+    font-size: 17px;
+}
+
+hr {
+    width: 80px;
+    height: 5px;
+    border-width: 0;
+    background-color:orange;
+    opacity: 1;
+}
+
+.post-thumnail {
+    display: flex;
+    justify-content:center;
+}
+
+.content-project {
+    position:relative;
+}
+.owl-carousel .owl-nav button.owl-prev {
+    position:absolute;
+    left: -100px;
+    top: 40%;
+    border-radius: 100%;
+    background-color:white;
+    color:#333;
+    width:50px;
+    height:50px;
+    font-size: 20px;
+    box-shadow: 0 0.2rem 0.2rem rgba(0,0,0,0.24) !important;
+    font-weight: bold;
+}
+.owl-carousel .owl-nav button.owl-next {
+    position:absolute;
+    right: -100px;
+    top: 40%;
+    border-radius: 100%;
+    box-shadow: 0 0.2rem 0.2rem rgba(0,0,0,0.24) !important;
+    background-color:white;
+    color: #333;
+    width:50px;
+    font-size: 20px;
+    font-weight:bold;
+    height:50px;
+}
+
+.customer {
+    width: 400px;
+    height: 250px;
+    position: relative;
+}
+
+
+.owl-carousel .owl-item .quote-img {
+    position: absolute;
+    width: 60px;
+    top: 55%;
+    left:80%;
+}
+
+.post-blog{
+    box-shadow: none;
+}
+.post-blog:hover {
+    box-shadow: none !important;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .home-register{ padding-bottom: 120px;}
+    .home-banner {
+        background-size: 130%;
+        background-position:60% 20%;
+    }
+    
+    .banner-title p {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+    .text-btn-banner {
+        font-size:13px;
+    }
+    .btn-banner {
+        width: 100%;
+        margin-left:0px !important; 
+    }
+   
+    .item-featured {
+        width:auto ;
+        margin-bottom:20px;
+        height:100% ;
+        padding-top:10 
+    }
+
+    .title-item-featured {
+        font-size:14px;
+    }
+    .solution-name {
+        font-size:14px;
+    }
+    .item-product {
+        text-align:center !important;
+    }
+    .img-about {
+        max-width: 50%;
+        margin-top: -130px;
+        padding-bottom: 50px;
+    }
+
+    .quote-img {
+        max-width:60%;
+        margin-top: -10px;
+    }
+    .item-usp {
+        padding:20px !important;
+    }
+    .amount-about {
+        font-size:23px;
+        padding-top:5px;
+        padding-bottom:5px;
+    }
+    .text-about {
+        font-size:16px !important;
+    }
+    
+    .customer {
+        width: 100%;
+        height: auto;
+    }
+    .post-blog {
+        margin-bottom: 10px;
+    }
+    .title-partner {
+        padding-top:0 !important;
+    }
+    
+    .content-banner {
+        margin-top:50px !important;
+    }
+    
+    .owl-carousel .owl-nav button.owl-next {
+        display: none;
+    }
+    .owl-carousel .owl-nav button.owl-prev {
+        display: none;
+    }
+    .img-home-service {
+        max-width:80%;
+    }
+    
+}
+    
+

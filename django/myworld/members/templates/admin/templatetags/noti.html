@@ -1,0 +1,11 @@
+{% load custom_tags %}
+{%if noti %}
+<div class="alert alert-dismissible alert-{{noti.status}}">
+    <h5><i class="icon fas fa-{{icon|keyvalue:noti.status}}"></i> 
+        Alert!
+    </h5>
+    {{noti.message}}
+</div>
+{%endif%}
+
+

@@ -1,0 +1,3 @@
+
+<img name="{{ widget.name }}" src="{{ widget.value|get_src_image }}" {% include "django/forms/widgets/attrs.html" %}>
+<input type="file" name="upload_{{widget.name}}" class="form-control" id="id_upload_video" accept="image/*" {% if widget.attrs.multiple %}multiple{% endif %} >

@@ -1,0 +1,17 @@
+{% load alert %}
+{% if errors %}
+    <div class="alert alert-danger">
+        <ul class="error-list list-unstyled mb-0">
+            {% for key, list_messages in errors.items %}
+                <li class="d-block d-md-flex my-1">
+                    <b>{{ form|get_fields_form|get_item:key }}</b>
+                    <ul class="list-unstyled ms-2">
+                        {% for value in list_messages %}
+                            <li>- {{ value }}</li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endif %}

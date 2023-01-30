@@ -1,0 +1,1098 @@
+{% extends 'default.html' %}
+{% load static %}
+{% block content %}
+    <div class="home-banner">
+        <div class="item-slide">
+            <div class="container">
+                <div class="row align-item-center">
+                    <div class="col-12 col-lg-6 order-2 order-lg-1">
+                        <div class="content-banner">
+                            <div class="banner-title d-block">
+                                <p class="text-primary">
+                                    WeUp ERP 
+                                    <br>
+                                    Giải pháp phần mềm đáp ứng mọi nhu cầu của doanh nghiệp
+                                </p>
+                            </div>
+                            <ul class="list-info ps-0">
+                                <li>
+                                    - 50.000+ Doanh nghiệp và chủ shop lựa chọn
+                                </li>
+                                <li>
+                                    - Đơn giản, dễ sử dụng, tối ưu chi phí, đột phá doanh thu
+                                </li>
+                                <li>
+                                    - Phù hợp với 18+ ngành hàng
+                                </li>
+                            </ul>
+                            <div class="container text-btn-banner">
+                                <div class="row">
+                                    <div class="col-6 col-lg-4">
+                                        <div class="item-subinfo text-center text-primary shadow rounded-4">
+                                            <span class="fs-1 fw-bold">50.000</span>
+                                            <p class="pb-3">Khách hàng sử dụng</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-5">
+                                        <div class="item-subinfo text-center text-primary shadow rounded-4">
+                                            <span class="fs-1 fw-bold">1000</span>
+                                            <p class="pb-3">Khách hàng mới mỗi tháng</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-banner btn btn-warning rounded-5 ms-3 fs-5 p-3 mt-3 fw-bold text-white">DÙNG THỬ MIỄN PHÍ!</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 order-1 order-lg-2">
+                        <div class="banner-img position-relative d-block text-right">
+                            <img src="{% static 'assets/img/img-banner-2.png' %}" alt="banner2">
+                            <img src="{% static 'assets/img/img-banner-1.png' %}" class="position-absolute start-0" alt="banner1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-featured">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-lg-3">
+                    <div class="item-featured text-center shadow rounded-3">
+                        <div class="icon-featured">
+                            <svg xmlns="http://www.w3.org/2000/svg' %}" width="59" height="73.75" viewBox="0 0 59 73.75">
+                                <path d="M53.937,59a1.23,1.23,0,0,0-1.229,1.229v2.458a1.229,1.229,0,1,0,2.458,0V60.229A1.23,1.23,0,0,0,53.937,59Zm1.229-13.521a1.229,1.229,0,1,0-2.458,0v9.833a1.229,1.229,0,1,0,2.458,0Zm7.375-13.521H8.458A2.461,2.461,0,0,0,6,34.417v4.917a2.461,2.461,0,0,0,2.458,2.458V67.6A6.153,6.153,0,0,0,14.6,73.75H56.4A6.153,6.153,0,0,0,62.542,67.6V45.479a1.229,1.229,0,0,0-2.458,0V67.6A3.692,3.692,0,0,1,56.4,71.292H14.6A3.692,3.692,0,0,1,10.917,67.6V40.563a1.23,1.23,0,0,0-1.229-1.229H8.458V34.417H62.542v4.917H14.6a1.229,1.229,0,0,0,0,2.458H62.542A2.461,2.461,0,0,0,65,39.333V34.417a2.461,2.461,0,0,0-2.458-2.458Zm-29.5-11.719v8.031a1.229,1.229,0,1,0,2.458,0v-8.6a1.237,1.237,0,0,0-.493-.985,4.88,4.88,0,0,1-1.965-3.932c0-3.093,2.976-8.339,4.917-11.329,1.941,2.991,4.917,8.237,4.917,11.329a4.926,4.926,0,0,1-3.944,4.821,1.229,1.229,0,0,0,.481,2.41,7.388,7.388,0,0,0,5.922-7.231C45.333,9.5,39.218.879,38.959.515a1.275,1.275,0,0,0-2,0C36.7.879,30.583,9.5,30.583,14.75a7.312,7.312,0,0,0,2.458,5.489ZM9.688,29.5h2.458a1.229,1.229,0,1,0,0-2.458H10.917V24.583h6.146a1.229,1.229,0,0,0,0-2.458H10.917V19.667h1.229a1.229,1.229,0,1,0,0-2.458H10.917V14.75h1.229a1.229,1.229,0,1,0,0-2.458H10.917V9.833h6.146a1.229,1.229,0,0,0,0-2.458H10.917V2.458h14.75V28.271a1.229,1.229,0,1,0,2.458,0V1.229A1.23,1.23,0,0,0,26.9,0H9.688A1.23,1.23,0,0,0,8.458,1.229V28.271A1.23,1.23,0,0,0,9.688,29.5Zm44.25-13.521V28.271a1.229,1.229,0,1,0,2.458,0V15.979a1.229,1.229,0,0,0-2.458,0Zm7.375-1.229a1.23,1.23,0,0,0-1.229,1.229V28.271a1.229,1.229,0,1,0,2.458,0V15.979a1.23,1.23,0,0,0-1.229-1.229ZM49.021,29.5a1.23,1.23,0,0,0,1.229-1.229V11.415l4.917-7.867L59.1,9.833H53.937a1.229,1.229,0,0,0,0,2.458h7.375a1.229,1.229,0,0,0,1.042-1.881L56.209.578a1.277,1.277,0,0,0-2.085,0l-6.146,9.833a1.231,1.231,0,0,0-.187.651V28.271A1.23,1.23,0,0,0,49.021,29.5Zm-6.146-4.917v3.688a1.229,1.229,0,1,1-2.458,0V24.583a1.229,1.229,0,0,1,2.458,0Z" transform="translate(-6)" fill="#f7af10" fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h4 class="title-item-featured">Thiết kế tùy chỉnh</h4>
+                        <div class="desc-featured">
+                            Linh hoạt theo nhu cầu của doanh nghiệp & đặc thù từng ngành hàng
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="item-featured text-center shadow rounded-3">
+                        <div class="icon-featured">
+                            <svg xmlns="http://www.w3.org/2000/svg' %}" width="63.016" height="63.016" viewBox="0 0 63.016 63.016">
+                                <g transform="translate(-0.5 -0.5)">
+                                    <path d="M45.707.5H7.35A6.856,6.856,0,0,0,.5,7.35v41.1a1.368,1.368,0,0,0,.4.969l13.7,13.7a1.368,1.368,0,0,0,.969.4H45.707a6.856,6.856,0,0,0,6.85-6.85V7.35A6.856,6.856,0,0,0,45.707.5Zm4.11,56.166a4.114,4.114,0,0,1-4.11,4.11H16.136L3.24,47.88V7.35A4.114,4.114,0,0,1,7.35,3.24H45.707a4.114,4.114,0,0,1,4.11,4.11Z" fill="#f7af10"></path>
+                                    <path d="M12.829,17.5H1.87A1.37,1.37,0,0,0,.9,19.838l13.7,13.7a1.37,1.37,0,0,0,2.338-.969V21.61A4.114,4.114,0,0,0,12.829,17.5ZM14.2,29.262,5.177,20.24h7.652a1.373,1.373,0,0,1,1.37,1.37Z" transform="translate(0 29.577)" fill="#f7af10"></path>
+                                    <path d="M25.526,3.862A16.432,16.432,0,0,0,17.791,33.49a8.288,8.288,0,0,1,3.486,6.69v.014a.546.546,0,0,0,.546.546H33.06a.546.546,0,0,0,.546-.546,8.5,8.5,0,0,1,3.6-6.791A16.435,16.435,0,0,0,25.526,3.862Z" transform="translate(18.265 5.652)" fill="#fff"></path>
+                                    <path d="M40.172,7.773A17.937,17.937,0,0,0,26.24,3.366h0a17.8,17.8,0,0,0-8.388,32.1,6.969,6.969,0,0,1,2.922,5.6,1.918,1.918,0,0,0,1.916,1.916H33.93a1.918,1.918,0,0,0,1.916-1.916,7.112,7.112,0,0,1,3.048-5.688,17.8,17.8,0,0,0,1.279-27.6ZM26.422,4.728ZM23.516,41.046Zm13.75-7.88a9.922,9.922,0,0,0-4.123,7.069H23.481a9.763,9.763,0,0,0-4.016-6.989A15.062,15.062,0,0,1,26.548,6.089h0A15.064,15.064,0,0,1,37.266,33.167Z" transform="translate(17.396 4.786)" fill="#f7af10"></path>
+                                    <rect width="12.329" height="4.11" rx="0.5" transform="translate(39.542 50.502)" fill="#f7af10"></rect>
+                                    <path d="M26.579,18.25H16.99a2.741,2.741,0,0,0-2.74,2.74v1.37a2.741,2.741,0,0,0,2.74,2.74h9.589a2.741,2.741,0,0,0,2.74-2.74V20.99a2.741,2.741,0,0,0-2.74-2.74Zm0,4.11H16.99V20.99h9.589Z" transform="translate(23.922 30.882)" fill="#f7af10"></path>
+                                    <path d="M20.61,12.5H17.87a1.37,1.37,0,0,0-1.37,1.37V24.829a1.37,1.37,0,0,0,2.74,0V15.24h1.37a1.37,1.37,0,1,0,0-2.74Z" transform="translate(27.837 20.878)" fill="#f7af10"></path>
+                                    <path d="M19.61,13.5H16.87a1.37,1.37,0,0,0,0,2.74h2.74a1.37,1.37,0,0,0,0-2.74Z" transform="translate(26.097 22.618)" fill="#f7af10"></path>
+                                    <path d="M12.35,10.5H6.87a1.37,1.37,0,0,0,0,2.74h5.48a1.37,1.37,0,1,0,0-2.74Z" transform="translate(8.699 17.398)" fill="#f7af10"></path>
+                                    <path d="M15.089,6.5H6.87a1.37,1.37,0,1,0,0,2.74h8.219a1.37,1.37,0,1,0,0-2.74Z" transform="translate(8.699 10.439)" fill="#f7af10"></path>
+                                    <path d="M17.829,14.5H6.87a1.37,1.37,0,0,0,0,2.74H17.829a1.37,1.37,0,0,0,0-2.74Z" transform="translate(8.699 24.357)" fill="#f7af10"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <h4 class="title-item-featured">Đơn giản, dễ sử dụng</h4>
+                        <div class="desc-featured">
+                            Phù hợp với mọi thiết bị và đối tượng người dùng
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="item-featured text-center shadow rounded-3">
+                        <div class="icon-featured">
+                            <svg xmlns="http://www.w3.org/2000/svg' %}" width="72" height="62.724" viewBox="0 0 72 62.724">
+                                <g transform="translate(-1.513 -1113.175)">
+                                    <path d="M42.292,48.617v39.47H34.972V52.511H31.578V88.086H24.284V57.577H20.87V88.086H11.143v3.44H50.066v-3.44H45.686V48.617Z" transform="translate(23.447 1084.373)" fill="#f7af10"></path>
+                                    <path d="M55.191,42.812v3.434H61.5L51.144,56.767l-5.827-5.907L32.223,64.967l-.72.773a19.329,19.329,0,0,0-10.521-3.113,19.678,19.678,0,1,0,13.235,5.234l.513-.553L45.417,55.8l5.727,5.807L63.859,48.686v6.347h3.414V42.812H55.191ZM20.982,66.06A16.225,16.225,0,1,1,4.847,82.281,16.164,16.164,0,0,1,20.982,66.06Z" transform="translate(0.06 1070.362)" fill="#f7af10"></path>
+                                    <path d="M9.7,51.252v2.72H5.422v9.647h8.561v2.807H5.422V69.86H9.7v2.72h3.427V69.86h4.254V60.186H8.842v-2.78h8.534V53.972H13.123v-2.72Z" transform="translate(9.639 1090.732)" fill="#f7af10"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <h4 class="title-item-featured">Đột phá doanh số</h4>
+                        <div class="desc-featured">
+                            Tăng trưởng nhanh, bền vững, doanh số đột phá đến 40%
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="item-featured text-center shadow rounded-3">
+                        <div class="icon-featured">
+                            <svg xmlns="http://www.w3.org/2000/svg' %}" width="59" height="73.75" viewBox="0 0 59 73.75">
+                                <path d="M53.937,59a1.23,1.23,0,0,0-1.229,1.229v2.458a1.229,1.229,0,1,0,2.458,0V60.229A1.23,1.23,0,0,0,53.937,59Zm1.229-13.521a1.229,1.229,0,1,0-2.458,0v9.833a1.229,1.229,0,1,0,2.458,0Zm7.375-13.521H8.458A2.461,2.461,0,0,0,6,34.417v4.917a2.461,2.461,0,0,0,2.458,2.458V67.6A6.153,6.153,0,0,0,14.6,73.75H56.4A6.153,6.153,0,0,0,62.542,67.6V45.479a1.229,1.229,0,0,0-2.458,0V67.6A3.692,3.692,0,0,1,56.4,71.292H14.6A3.692,3.692,0,0,1,10.917,67.6V40.563a1.23,1.23,0,0,0-1.229-1.229H8.458V34.417H62.542v4.917H14.6a1.229,1.229,0,0,0,0,2.458H62.542A2.461,2.461,0,0,0,65,39.333V34.417a2.461,2.461,0,0,0-2.458-2.458Zm-29.5-11.719v8.031a1.229,1.229,0,1,0,2.458,0v-8.6a1.237,1.237,0,0,0-.493-.985,4.88,4.88,0,0,1-1.965-3.932c0-3.093,2.976-8.339,4.917-11.329,1.941,2.991,4.917,8.237,4.917,11.329a4.926,4.926,0,0,1-3.944,4.821,1.229,1.229,0,0,0,.481,2.41,7.388,7.388,0,0,0,5.922-7.231C45.333,9.5,39.218.879,38.959.515a1.275,1.275,0,0,0-2,0C36.7.879,30.583,9.5,30.583,14.75a7.312,7.312,0,0,0,2.458,5.489ZM9.688,29.5h2.458a1.229,1.229,0,1,0,0-2.458H10.917V24.583h6.146a1.229,1.229,0,0,0,0-2.458H10.917V19.667h1.229a1.229,1.229,0,1,0,0-2.458H10.917V14.75h1.229a1.229,1.229,0,1,0,0-2.458H10.917V9.833h6.146a1.229,1.229,0,0,0,0-2.458H10.917V2.458h14.75V28.271a1.229,1.229,0,1,0,2.458,0V1.229A1.23,1.23,0,0,0,26.9,0H9.688A1.23,1.23,0,0,0,8.458,1.229V28.271A1.23,1.23,0,0,0,9.688,29.5Zm44.25-13.521V28.271a1.229,1.229,0,1,0,2.458,0V15.979a1.229,1.229,0,0,0-2.458,0Zm7.375-1.229a1.23,1.23,0,0,0-1.229,1.229V28.271a1.229,1.229,0,1,0,2.458,0V15.979a1.23,1.23,0,0,0-1.229-1.229ZM49.021,29.5a1.23,1.23,0,0,0,1.229-1.229V11.415l4.917-7.867L59.1,9.833H53.937a1.229,1.229,0,0,0,0,2.458h7.375a1.229,1.229,0,0,0,1.042-1.881L56.209.578a1.277,1.277,0,0,0-2.085,0l-6.146,9.833a1.231,1.231,0,0,0-.187.651V28.271A1.23,1.23,0,0,0,49.021,29.5Zm-6.146-4.917v3.688a1.229,1.229,0,1,1-2.458,0V24.583a1.229,1.229,0,0,1,2.458,0Z" transform="translate(-6)" fill="#f7af10" fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h4 class="title-item-featured">Tối ưu chi phí</h4>
+                        <div class="desc-featured">
+                            Đầu tư một lần, sử dụng mãi mãi, gia tăng lợi thế cạnh tranh
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-service">
+        <div class="container">
+            <div class="header d-block">
+                <div class="title mb-5">
+                    <h2 class="text-primary text-center pt-5 pb-2 fw-bold">DỊCH VỤ CỦA CHÚNG TÔI</h2>
+                    <img src="{% static 'assets/img/icon-wave.svg' %}" class="rounded mx-auto d-block" alt="wave">
+                </div>
+            </div>
+            <div class="row content">
+                <div class="col-12  col-md-6 order-2 order-lg-1">
+                    <div class="list-service">
+                        <div class="item-service p-3 mb-4 shadow rounded-3">
+                            <div class="service-name fs-5 ps-5 pe-5 mb-2 fw-bold">
+                                <i class="fa-solid fa-circle-arrow-down pe-3 fs-3"></i>
+                                Nghiên cứu & Tư vấn giải pháp phần mềm quản trị Doanh nghiệp WeUp ERP
+                            </div>
+                            <div class="service-content ps-5 pe-5" style="display:none;">
+                                Tiết kiệm thời gian, tối ưu chi phí, tùy chỉnh linh hoạt theo nghiệp vụ đặc thù trên hạ tầng có sẵn của doanh nghiệp. 
+                                Cam kết an toàn, bảo mật dữ liệu trong suốt quá trình tùy chỉnh và nâng cấp. 
+                                Đồng thời hỗ trợ doanh nghiệp đến khi triển khai nhuần nhuyễn quy trình trong phần mềm.
+                                <div class="text-right">
+                                    <a href="https://weupgroup.vn/dich-vu/trien-khai-tron-goi-phan-mem-weup-erp-cho-doanh-nghiep" class="view-more mt-2 btn btn-outline-warning rounded-5">Xem tất cả</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-service p-3 mb-4 shadow rounded-3">
+                            <div class="service-name fs-5 ps-5 pe-5 mb-2 fw-bold">
+                                <i class="fa-solid fa-circle-arrow-down pe-3 fs-3"></i>
+                                Triển khai trọn gói phần mềm quản trị doanh nghiệp WeUp ERP
+                            </div>
+                            <div class="service-content ps-5 pe-5" style="display:none;">
+                                Sử dụng nền tảng công nghệ hiện đại, đội ngũ triển khai chuyên nghiệp, giàu kinh nghiệm đã triển khai thành công nhiều dự án lớn. 
+                                Cam kết uy tín, hiệu quả, đúng tiến độ. 
+                                Mọi phần mềm triển khai bởi WeUp đều được kiểm thử kỹ càng trước khi bàn giao tới khách hàng.
+                                <div class="text-right">
+                                    <a href="https://weupgroup.vn/trien-khai-tron-goi-phan-mem-weup-erp-cho-doanh-nghiep/" class="view-more mt-2 btn btn-outline-warning rounded-5">Xem tất cả</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-service p-3 mb-4 shadow rounded-3">
+                            <div class="service-name fs-5 ps-5 pe-5 mb-2 fw-bold">
+                                <i class="fa-solid fa-circle-arrow-down pe-3 fs-3"></i>
+                                Tùy chỉnh và Nâng cấp phần mềm quản trị theo yêu cầu 
+                            </div>
+                            <div class="service-content ps-5 pe-5" style="display:none;">
+                                Tiết kiệm thời gian, tối ưu chi phí, tùy chỉnh linh hoạt theo nghiệp vụ đặc thù trên hạ tầng có sẵn của doanh nghiệp. 
+                                Cam kết an toàn, bảo mật dữ liệu trong suốt quá trình tùy chỉnh và nâng cấp. 
+                                Đồng thời hỗ trợ doanh nghiệp đến khi triển khai nhuần nhuyễn quy trình trong phần mềm.                                        
+                                <div class="text-right">
+                                    <a href="https://weupgroup.vn/dich-vu/trien-khai-tron-goi-phan-mem-weup-erp-cho-doanh-nghiep" class="view-more mt-2 btn btn-outline-warning rounded-5">Xem tất cả</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-service p-3 mb-4 shadow rounded-3">
+                            <div class="service-name fs-5 ps-5 pe-5 mb-2 fw-bold">
+                                <i class="fa-solid fa-circle-arrow-down pe-3 fs-3"></i>
+                                Tư vấn và Triển khai trọn gói Mobile App
+                            </div>
+                            <div class="service-content ps-5 pe-5" style="display:none;">
+                                
+                                Triển khai trọn gói Mobile App theo yêu cầu của doanh nghiệp trên các nền tảng CNTT hiện đại. 
+                                Tích hợp với mọi hệ điều hành và thiết bị di động. Giao diện thân thiện, dễ sử dụng, tính năng độc đáo, khác biệt. 
+                                Từ đó mang đến những trải nghiệm tuyệt vời cho người dùng.                                        
+                                <div class="text-right">
+                                    <a href="https://weupgroup.vn/dich-vu/trien-khai-tron-goi-phan-mem-weup-erp-cho-doanh-nghiep" class="view-more mt-2 btn btn-outline-warning rounded-5">Xem tất cả</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 order-1 order-lg-2">
+                    <div class="order-1 order-lg-2 d-flex justify-content-center pb-3">
+                        <img src="{% static 'assets/img/image-service.png' %}" alt="service" class="img-home-service">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-product">
+        <div class="container">
+            <div class="head">
+                <div class="title">
+                    <h2 class="text-primary text-center pt-5 pb-2 fw-bold">WEUP CUNG CẤP CÁC GIẢI PHÁP GIÚP BẠN:</h2>
+                    <h2 class="text-primary text-center fw-bold pb-3">XÓA BỎ MỌI RÀO CẢN, QUẢN LÝ VÀ KINH DOANH ĐỘT PHÁ</h2>
+                    <img src="{% static 'assets/img/icon-wave.svg' %}" class="rounded mx-auto d-block" alt="wave">
+                    <p class="text-center fs-5 text-dark pb-2 mt-3">Chúng tôi cung cấp đa dạng các giải pháp, phần mềm giúp doanh nghiệp, chủ shop vận hành kinh doanh hiệu quả, đột phá doanh thu.</p>
+                </div>
+            </div>
+            <div class="body">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-12">
+                        <div class="border mb-4 rounded-3 shadow">
+                            <div class="row p-3 item-product">
+                                <div class="col-12 col-md-4">
+                                        <img src="{% static 'assets/img/weup-erp.png' %}" alt="erp" class="img-responsive">
+                                </div>
+                                <div class="col-12 col-md-8">
+                                    <div class="produc_title">
+                                        <h3 class="text-primary">WeUp ERP</h3>
+                                    </div>
+                                    <div class="product_desc">
+                                        <p>Phần mềm quản lý kinh doanh giúp chủ doanh nghiệp/ chủ shop vận hành doanh nghiệp hiệu quả, giảm chi phí & thất thoát, tối ưu doanh thu </p>
+                                    </div>
+                                    <a href="#" class="btn-product btn btn-outline-warning rounded-5">Dùng Thử</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="border mb-4 rounded-3 shadow">
+                            <div class="row p-3 item-product">
+                                <div class="col-12 col-md-4">
+                                        <img src="{% static 'assets/img/weup-web.png' %}" alt="erp" class="img-responsive">
+                                </div>
+                                <div class="col-12 col-md-8">
+                                    <div class="produc_title">
+                                        <h3 class="text-primary">WeUp WEB</h3>
+                                    </div>
+                                    <div class="product_desc">
+                                        <p>Thiết kế, vận hành web chuyên nghiệp, hiệu quả trên các nền tảng WordPress, Jomla, Haravan, Magento, Shopify,... </p>
+                                    </div>
+                                    <a href="#" class="btn-product btn btn-outline-warning rounded-5">Dùng Thử</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="border mb-4 rounded-3 shadow">
+                            <div class="row p-3 item-product">
+                                <div class="col-12 col-md-4">
+                                        <img src="{% static 'assets/img/weup-erp.png' %}" alt="erp" class="img-responsive">
+                                </div>
+                                <div class="col-12 col-md-8">
+                                    <div class="produc_title">
+                                        <h3 class="text-primary">WeUp APP</h3>
+                                    </div>
+                                    <div class="product_desc">
+                                        <p>Thiết kế ứng dụng trên điện thoại di động (Mobile App), tùy chỉnh theo nhu cầu của chủ doanh nghiệp và đặc thù từng ngành hàng </p>
+                                    </div>
+                                    <a href="#" class="btn-product btn btn-outline-warning rounded-5">Dùng Thử</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="border mb-4 rounded-3 shadow">
+                            <div class="row p-3 item-product">
+                                <div class="col-12 col-md-4">
+                                        <img src="{% static 'assets/img/weup-crm.png' %}" alt="erp" class="img-responsive">
+                                </div>
+                                <div class="col-12 col-md-8">
+                                    <div class="produc_title">
+                                        <h3 class="text-primary">WeUp CRM</h3>
+                                    </div>
+                                    <div class="product_desc">
+                                        <p>Phần mềm quản lý quan hệ khách hàng giúp đánh giá, theo dõi, chăm sóc khách hàng để gia tăng tỷ lệ chuyển đổi và tỷ lệ khách hàng quay lại </p>
+                                    </div>
+                                    <a href="#" class="btn-product btn btn-outline-warning rounded-5">Dùng Thử</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-solution">
+        <div class="container">
+            <div class="head">
+                <div class="title">
+                    <h2 class="text-primary text-center pt-5 pb-2 fw-bold">GIẢI PHÁP PHẦN MỀM CHUYÊN BIỆT THEO NGHÀNH HÀNG</h2>
+                    <img src="{% static 'assets/img/icon-wave.svg' %}" class="rounded mx-auto d-block" alt="wave">
+                    <p class="text-center fs-5 text-dark pb-2 mt-3">Chúng tôi thiết kế giải pháp, phần mềm chuyên biệt theo từng ngành hàng Giúp doanh nghiệp tối đa hiệu quả, hiệu suất làm việc, kinh doanh</p>
+                </div>
+                <div class="body">
+                    <div class="row">
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="shadow solution-element rounded-4 mb-3 p-3">
+                                <a href="#">
+                                    <div class="solution-thumnail text-center">
+                                        <img src="{% static 'assets/img/thiet-bi-vat-tu-y-te (1).png' %}" alt="tbyt">
+                                    </div>
+                                    <div class="solution-name">
+                                        Thiết Bị Y Tế
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="shadow solution-element rounded-4 mb-3 p-3">
+                                <a href="#">
+                                    <div class="solution-thumnail text-center">
+                                        <img src="{% static 'assets/img/me-va-be.png' %}" alt="tbyt">
+                                    </div>
+                                    <div class="solution-name">
+                                        Mẹ & Bé
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="shadow solution-element rounded-4 mb-3 p-3">
+                                <a href="#">
+                                    <div class="solution-thumnail text-center">
+                                        <img src="{% static 'assets/img/icon-solution-5.png' %}" alt="tbyt">
+                                    </div>
+                                    <div class="solution-name">
+                                        Nha Khoa
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="shadow solution-element rounded-4 mb-3 p-3">
+                                <a href="#">
+                                    <div class="solution-thumnail text-center">
+                                        <img src="{% static 'assets/img/icon-solution-7.png' %}" alt="tbyt">
+                                    </div>
+                                    <div class="solution-name">
+                                        Bán Lẻ
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="shadow solution-element rounded-4 mb-3 p-3">
+                                <a href="#">
+                                    <div class="solution-thumnail text-center">
+                                        <img src="{% static 'assets/img/icon-solution-8.png' %}" alt="tbyt">
+                                    </div>
+                                    <div class="solution-name">
+                                        Nhà thuốc
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="shadow solution-element rounded-4 mb-3 p-3">
+                                <a href="#">
+                                    <div class="solution-thumnail text-center">
+                                        <img src="{% static 'assets/img/my-pham.png' %}" alt="tbyt">
+                                    </div>
+                                    <div class="solution-name">
+                                        Mỹ Phẩm
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="shadow solution-element rounded-4 mb-3 p-3">
+                                <a href="#">
+                                    <div class="solution-thumnail text-center">
+                                        <img src="{% static 'assets/img/du-lich-khach-san.png' %}" alt="tbyt">
+                                    </div>
+                                    <div class="solution-name">
+                                        Du Lịch - Khách Sạn
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="shadow solution-element rounded-4 mb-3 p-3">
+                                <a href="#">
+                                    <div class="solution-thumnail text-center">
+                                        <img src="{% static 'assets/img/tham-my-vien.png' %}" alt="tbyt">
+                                    </div>
+                                    <div class="solution-name">
+                                        Spa, Thẩm Mỹ Viện
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="shadow solution-element rounded-4 mb-3 p-3">
+                                <a href="#">
+                                    <div class="solution-thumnail text-center">
+                                        <img src="{% static 'assets/img/phong-kham-yhct.png' %}" alt="tbyt">
+                                    </div>
+                                    <div class="solution-name">
+                                        Phòng Khám YHCT
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="shadow solution-element rounded-4 mb-3 p-3">
+                                <a href="#">
+                                    <div class="solution-thumnail text-center">
+                                        <img src="{% static 'assets/img/icon-solution-8.png' %}" alt="tbyt">
+                                    </div>
+                                    <div class="solution-name">
+                                        Phòng Khám Đa Khoa
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="shadow solution-element rounded-4 mb-3 p-3">
+                                <a href="#">
+                                    <div class="solution-thumnail text-center">
+                                        <img src="{% static 'assets/img/icon-solution-8.png' %}" alt="tbyt">
+                                    </div>
+                                    <div class="solution-name">
+                                        Phòng Khám Đa Khoa
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="shadow solution-element rounded-4 mb-3 p-3">
+                                <a href="#">
+                                    <div class="solution-thumnail text-center">
+                                        <img src="{% static 'assets/img/nganh-hang-khac.png' %}" alt="tbyt">
+                                    </div>
+                                    <div class="solution-name">
+                                        Ngành Hàng Khác
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-register bg-info"> 
+        <div class="container text-center">
+            <div class="row ">
+                <div class="col-12 col-lg-2">
+                    <img src="{% static 'assets/img/image-register.svg' %}" alt="">
+                </div>
+                <div class="col-12 col-lg-7 align-self-center">
+                    <p class="text-center content-register">
+                        <span>
+                            ĐĂNG KÝ NGAY
+                        </span>
+                        để trải nghiệm
+                        <br>
+                        7 ngày dùng thử
+                        <span>
+                            HOÀN TOÀN MIỄN PHÍ
+                        </span>
+                    </p>
+                </div>
+                <div class="col-12 col-lg-3 align-self-center">
+                    <a href="#" class="btn btn-warning rounded-5 btn-lg rounded-5 ps-4 pe-4 fw-bold text-white">Đăng ký ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-about">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-6 order-2 order-lg-1">
+                    <div class="align-self-center ">
+                        <fieldset>
+                            <legend class="w-auto float-none">
+                                <h1 class="text-primary">
+                                    WEUP GROUP
+                                </h1>
+                            </legend>
+                            <img src="{% static 'assets/img/icon-wave.svg' %}" alt="wave">
+                            <p class="content-home-about">
+                                Được thành lập với mục đích đem đến các giải pháp công nghệ tối ưu về Mobile App, Phần mềm CRM & ERP, CDP, AI... 
+                                Giúp xử lý công việc nhanh chóng, tiện lợi, hiệu quả cao và tiết kiệm chi phí.
+                            </p>
+                            <p class="content-home-about">
+                                Đội ngũ sáng lập, kỹ sư, chuyên viên của WeUp Group luôn TẬN TÂM - TẬN LỰC trong nghiên cứu, 
+                                làm việc để mang lại những sản phẩm công nghệ hoàn hảo nhất.
+                            </p>
+                            <blockquote class="position-relative">
+                                <span class="fs-5 text-primary">Chúng tôi tin rằng</span>
+                                <p class="fs-3 text-primary fw-bold">
+                                    Điều gì xuất phát từ TRÁI TIM
+                                    <br>
+                                    sẽ ĐẾN được với TRÁI TIM
+                                </p>
+                                <div class="quote-img position-absolute top-0 end-0">
+                                    <img src="{% static 'assets/img/quote-about.svg' %}" alt="quote-img" class="quote-img">
+                                </div>
+                            </blockquote>
+                            <a href="https://weupgroup.vn/ve-chung-toi" class="legend2 btn btn-warning rounded-5 btn-lg rounded-5 ps-4 pe-4 fw-bold text-white">XEM TẤT CẢ</a>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="col-md-6 order-1 order-lg-2 align-self-center ">
+                    <div class="container text-center ">
+                        <img src="{% static 'assets/img/image-about.png' %}" alt="image" class="img-about">
+                    </div>
+                </div>
+            </div>
+            <div class="row align-self-center mt-5">
+                <div class="col-md-6 list-usp">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="item-usp text-center shadow rounded-4 p-4 me-4 mb-4">
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon-usp-1.svg' %}" alt="i-usp-1">
+                                </div>
+                                <div class="item-name">
+                                    <h1 class="text-primary amount-about">5.000.000+</h1>
+                                    <p class="text-primary text-about">Người dùng</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="item-usp text-center shadow rounded-4 p-4 mb-4">
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon-usp-2.svg' %}" alt="i-usp-1">
+                                </div>
+                                <div class="item-name">
+                                    <h1 class="text-primary amount-about">2.000+</h1>
+                                    <p class="text-primary text-about">Nhà phát triển cộng đồng</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="item-usp text-center shadow rounded-4 p-4 me-4">
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon-usp-3.svg' %}" alt="i-usp-1">
+                                </div>
+                                <div class="item-name">
+                                    <h1 class="text-primary amount-about">100+</h1>
+                                    <p class="text-primary text-about">Đối tác trên toàn thế giới</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="item-usp text-center shadow rounded-4 p-4 ">
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon-usp-4.svg' %}" alt="i-usp-1">
+                                </div>
+                                <div class="item-name">
+                                    <h1 class="text-primary amount-about">99%</h1>
+                                    <p class="text-primary text-about">Khách hàng hài lòng</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="header p-4 align-self-center">
+                        <div class="title">
+                            <h1>Hơn 50.000+
+                                <br>
+                                Khách hàng & Thương hiệu
+                            </h1>
+                        </div>
+                        <div claas="desc">
+                            <p class="fs-4 pt-2 pe-4">
+                                tin chọn và sử dụng sản phẩm, dịch vụ của Weup nhờ:
+                            </p>
+                        </div>
+                        <img src="{% static 'assets/img/icon-wave.svg' %}" alt="wave">
+                    </div>
+                    <ul class="ps-4 pe-4">
+                        <li class="mb-3">
+                            <img src="{% static 'assets/img/icon-checked.svg' %}" alt="icon-checked">
+                            <span class="fs-5 p-1">Thương hiệu uy tín, tin cậy, triển khai nhiều dự án lớn</span>
+                        </li>
+                        <li class="mb-3">
+                            <img src="{% static 'assets/img/icon-checked.svg' %}" alt="icon-checked">
+                            <span class="fs-5 p-1">Đội ngũ triển khai chuyên nghiệp, hơn 10 năm kinh nghiệm</span>
+                        </li>
+                        <li class="mb-3">
+                            <img src="{% static 'assets/img/icon-checked.svg' %}" alt="icon-checked">
+                            <span class="fs-5 p-1">Support nhiệt tình trong suốt quá trình sử dụng</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <hr> -->
+    </div>
+    <div class="home-project">
+        <div class="container">
+            <div class="head-project">
+                <div class="title mb-5">
+                    <h2 class="text-primary text-center pt-5 pb-2 fw-bold">SẢN PHẨM DO WEUP THỰC HIỆN</h2>
+                    <img src="{% static 'assets/img/icon-wave.svg' %}" class="rounded mx-auto d-block" alt="wave">
+                </div>
+            </div>
+            <div class="content-project">
+                <div class="row">
+                    <div id="owl-demo" class="owl-carousel owl-theme">
+                        <div class="item-project">
+                            <div class="project-thumnail">
+                                <img src="{% static 'assets/img/thuoc-dan-toc-erp-min.png' %}" alt="thuoc-dan-toc">
+                            </div>
+                            <div class="project-content mt-3">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="content-center">
+                                            <img src="{% static 'assets/img/thuoc-dan-toc.png' %}" alt="thuoc-dt">
+                                        </div>
+                                    </div>
+                                    <div class="col-8 ">
+                                        <div class="content-center">
+                                            <div class="project-tile">
+                                                <h4>MOBILE APP THUỐC DÂN TỘC</h4>
+                                                <hr>
+                                            </div>
+                                            <div class="project-desc">
+                                                <p>
+                                                    Ứng dụng được WeUp thiết kế riêng cho lĩnh vực y tế. 
+                                                    Cung cấp rất nhiều thông tin hữu ích về cách chăm sóc và bảo vệ sức khỏe cho mỗi cá nhân và gia đình. 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-project">
+                            <div class="project-thumnail">
+                                <img src="{% static 'assets/img/dominhduong-thumnail.png' %}" alt="DMD">
+                            </div>
+                            <div class="project-content mt-3">
+                                <div class="row">
+                                    <div class="col-4 ">
+                                        <div class="content-center">
+                                            <img src="{% static 'assets/img/dominhduong-logo.png' %}" alt="DMD">
+                                        </div>
+                                    </div>
+                                    <div class="col-8 ">
+                                        <div class="content-center">
+                                            <div class="project-tile">
+                                                <h4>ERP ĐỖ MINH ĐƯỜNG</h4>
+                                                <hr>
+                                            </div>
+                                            <div class="project-desc">
+                                                <p>
+                                                    Chỉ sau 6 tháng ứng dụng, phần mềm ERP For Healthcare đã giúp nhà thuốc Đỗ Minh Đường tiết kiệm 25% chi phí và tăng >30%  doanh thu. 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-project">
+                            <div class="project-thumnail">
+                                <img src="{% static 'assets/img/Golf_group-thumnail.png' %}" alt="GOLF">
+                            </div>
+                            <div class="project-content mt-3">
+                                <div class="row">
+                                    <div class="col-4 ">
+                                        <div class="content-center">
+                                            <img src="{% static 'assets/img/gofl-logo.png' %}" alt="GOLF">
+                                        </div>
+                                    </div>
+                                    <div class="col-8 ">
+                                        <div class="content-center">
+                                            <div class="project-tile">
+                                                <h4>MOBILE APP GOLFGROUP</h4>
+                                                <hr>
+                                            </div>
+                                            <div class="project-desc">
+                                                <p>
+                                                    Ứng dụng Mobile App các golfer không thể bỏ lỡ bởi nó cung cấp những thông tin vô cùng hữu ích về gậy golf, sân tập, lịch tập, các chương trình ưu đãi... 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-project">
+                            <div class="project-thumnail">
+                                <img src="{% static 'assets/img/auto-thumnail.png' %}" alt="auto">
+                            </div>
+                            <div class="project-content mt-3">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="content-center">
+                                            <img src="{% static 'assets/img/auto-logo.png' %}" alt="auto">
+                                        </div>
+                                    </div>
+                                    <div class="col-8 ">
+                                        <div class="content-center">
+                                            <div class="project-tile">
+                                                <h4>SÀN THƯƠNG MẠI AUTO GROUP</h4>
+                                                <hr>
+                                            </div>
+                                            <div class="project-desc">
+                                                <p>
+                                                    Sàn thương mại điện tử ô tô chuyên về xe sang, xe lướt. Cho phép người dùng định giá, mua - bán xe với mức chi phí hợp lý nhất. 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-project">
+                            <div class="project-thumnail">
+                                <img src="{% static 'assets/img/thuoc-dan-toc-erp-min.png' %}" alt="thuoc-dan-toc">
+                            </div>
+                            <div class="project-content mt-3">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class=" content-center">
+                                            <img src="{% static 'assets/img/thuoc-dan-toc.png' %}" alt="thuoc-dt">
+                                        </div>
+                                    </div>
+                                    <div class="col-8 ">
+                                        <div class="content-center">
+                                            <div class="project-tile">
+                                                <h4>ERP THUỐC DÂN TỘC</h4>
+                                                <hr>
+                                            </div>
+                                            <div class="project-desc">
+                                                <p>
+                                                    Phần mềm quản lý tổng thể Bệnh viện hiện đại, giúp nâng cao năng lực quản lý, tiết kiệm chi phí, tăng hiệu suất, hiệu quả công việc cho TDT.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-project">
+                            <div class="project-thumnail">
+                                <img src="{% static 'assets/img/vietmec-thumnail.png ' %}" alt="vietmec">
+                            </div>
+                            <div class="project-content mt-3">
+                                <div class="row">
+                                    <div class="col-4 ">
+                                        <div class="content-center">
+                                            <img src="{% static 'assets/img/vietmec-logo.png' %}" alt="vietmec">
+                                        </div>
+                                    </div>
+                                    <div class="col-8 ">
+                                        <div class="content-center">
+                                            <div class="project-tile">
+                                                <h4>ERP VIETMEC GROUP</h4>
+                                                <hr>
+                                            </div>
+                                            <div class="project-desc">
+                                                <p>
+                                                    Phần mềm quản lý tổng thể doanh nghiệp cho Tập đoàn Y Dược Quốc Gia Việt Nam - Vietmec Group. Giúp Vietmec số hóa và thành công mở rộng hệ thống.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-project">
+                            <div class="project-thumnail">
+                                <img src="{% static 'assets/img/nhat-nam-min.png' %}" alt="nhatnam">
+                            </div>
+                            <div class="project-content mt-3">
+                                <div class="row">
+                                    <div class="col-4 ">
+                                        <div class="content-center">
+                                            <img src="{% static 'assets/img/nhat-nam.png' %}" alt="nhatnam">
+                                        </div>
+                                    </div>
+                                    <div class="col-8 ">
+                                        <div class="content-center">
+                                            <div class="project-tile">
+                                                <h4>ERP NHẤT NAM Y VIỆN</h4>
+                                                <hr>
+                                            </div>
+                                            <div class="project-desc">
+                                                <p>
+                                                    Phần mềm quản lý phòng khám chuyên nghiệp. Giúp Nhất Nam thành công đổi mới quy trình quản lý cũ, nâng cao chất lượng dịch vụ và phát triển đột phá.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-customer bg-info">
+        <div class="container">
+            <div class="header">
+                <div class="title">
+                    <div class="title mb-5">
+                        <h2 class="text-primary text-center pt-5 pb-2 fw-bold text-white">KHÁCH HÀNG NÓI GÌ VỀ WEUP</h2>
+                        <img src="{% static 'assets/img/icon-wave.svg' %}" class="rounded mx-auto d-block" alt="wave">
+                        <p class="text-center fs-5 text-dark pb-2 mt-3 text-white">Rất nhiều khách hàng đã lựa chọn WeUp và hài lòng. Hãy cùng xem họ nói gì về chúng tôi nhé!</p>
+                    </div>
+                </div>
+            </div>
+            <div clas="content">
+                <div id="owl-demo" class="partner-slide owl-carousel owl-theme">
+                    <div class="customer shadow bg-white rounded-5 p-4 ms-1">
+                        <div class="quote-img">
+                            <img src="{% static 'assets/img/icon-quote.svg' %}" alt="lag">
+                            </div>
+                        <div class="customer-content">
+                            Càng đưa ERP For Healthcare vào ứng dụng chậm chễ ngày nào thì các phòng khám càng phải hối hận ngày đó. ĐMĐ đã hoàn toàn đúng đắn khi chọn ERP WeUp.
+                        </div>
+                        <div class="customer-info pt-5">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="{% static 'assets/img/nguyen-thanh-tung.png' %}" alt="nguyenthanhtung">
+                                </div>
+                                <div class="col-9">
+                                    <h6>Nguyễn Thanh Tùng</h6>
+                                    <span>Tổng Giám Đốc Đỗ Minh Đường</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customer shadow bg-white rounded-5 p-4 ms-1">
+                        <div class="quote-img">
+                            <img src="{% static 'assets/img/icon-quote.svg' %}" alt="lag">
+                            </div>
+                        <div class="customer-content">
+                            Biến những điều không thể thành có thể. WeUp đã giúp Auto Group hiện thực hóa điều đó từ trang thương mại điện tử ô tô đầu tiên- Auto Group.
+                        </div>
+                        <div class="customer-info pt-5">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="{% static 'assets/img/nguy-thi-hien.png' %}" alt="nguyenthihien">
+                                </div>
+                                <div class="col-9">
+                                    <h6>Nguyễn Thị Hiền</h6>
+                                    <span>Giám Đốc Kinh Doanh Auto Group</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customer shadow bg-white rounded-5 p-4 ms-1">
+                        <div class="quote-img">
+                            <img src="{% static 'assets/img/icon-quote.svg' %}" alt="lag">
+                            </div>
+                        <div class="customer-content">
+                            ERP của WeUp đã giúp Nhất Nam Y Viện thành công dành trọn sự tin yêu và hài lòng của khách hàngnhờ tối ưu quy trình và nâng cao chất lượng dịch vụ.  
+                        </div>
+                        <div class="customer-info pt-5">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="{% static 'assets/img/nguyen-thi-hang.png' %}" alt="nguyenthihang">
+                                </div>
+                                <div class="col-9">
+                                    <h6>Trần Thanh Hằng </h6>
+                                    <span>Tổng Giám Đốc Nhất Nam Y Viện</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customer shadow bg-white rounded-5 p-4">
+                        <div class="quote-img">
+                        <img src="{% static 'assets/img/icon-quote.svg' %}" alt="lag">
+                        </div>
+                        <div class="customer-content">
+                            Doanh thu tăng hợp 1,5 lần, tiết kiệm được hơn 20% chi phí vận hành. Đó là kết quả bước đầu Bệnh viện Thuốc Dân Tộc có được nhờ ứng dụng ERP.
+                        </div>
+                        <div class="customer-info pt-5">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="{% static 'assets/img/nguyen-quang-hung.png' %}" alt="nguyenquanghung">
+                                </div>
+                                <div class="col-9">
+                                    <h6>Nguyễn Quang Hưng</h6>
+                                    <span>Tổng Giám Đốc Thuốc Dân Tộc</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-blog">
+        <div class="container">
+            <div class="nav-blog">
+                <nav class="nav nav-pills d-flex justify-content-center" id="pills-tab" role="tablist">
+                    <div class="nav-items" role="presentation">
+                        <a  href="https://weupgroup.vn/#blogs-news" class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                            <h3>TIN TỨC WEUP</h3>
+                        </a>
+                    </div>
+                    <div class="nav-items" role="presentation">
+                        <a href="https://weupgroup.vn/#blogs" class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                            <h3>BLOG</h3>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="tab-content mt-3" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                    <div class="row">
+                        <div class="post-blog col-12 col-lg-4">
+                            <a href="https://weupgroup.vn/but-pha-gioi-han-break-the-limit-team-building-ket-thuc-nhung-du-am-con-de-lai/" class="post-thumnail">
+                                <img width="400" height="230" src="{% static 'assets/img/weup-du-lich-he-2022-17-min-350x230.jpg' %}" alt="dulich-2017" class="rounded-4">
+                            </a>
+                            <h5 class="post-title pt-3 ">
+                                <a href="https://weupgroup.vn/but-pha-gioi-han-break-the-limit-team-building-ket-thuc-nhung-du-am-con-de-lai/" class="text-dark">“Bứt phá giới hạn – Break The Limit”: Team Building kết thúc nhưng dư âm còn để lại</a>
+                            </h5>
+                            <div class="post-excerpt p-0">
+                                “Team Building "Bứt phá giới hạn - Break The Limit" năm nay với tôi là một kỳ nghỉ tuyệt vời. Hành trình khám phá bãi biển Minh Châu, Quan Lạn…
+                            </div>
+                        </div>
+                        <div class="post-blog col-12 col-lg-4">
+                            <a href="https://weupgroup.vn/an-tuong-tai-webinar-giai-phap-x2-doanh-so-giai-quyet-cac-noi-dau-cua-doanh-nghiep/" class="post-thumnail">
+                                <img width="400" height="230" src="{% static 'assets/img/weup-erp-bi-quyet-chuyen-doi-so-thanh-cong-2-min-350x230.jpg' %}" alt="dulich-2017" class="rounded-4">
+                            </a>
+                            <h5 class="post-title pt-3 ">
+                                <a href="https://weupgroup.vn/an-tuong-tai-webinar-giai-phap-x2-doanh-so-giai-quyet-cac-noi-dau-cua-doanh-nghiep/" class="text-dark">Ấn Tượng Tại Webinar “Chuyển Đổi Số: Giải Pháp X2 Doanh số & Giải Quyết Các Nỗi Đau Của Doanh Nghiệp”</a>
+                            </h5>
+                            <div class="post-excerpt p-0">
+                                Trong buổi webinar “Chuyển Đổi Số: Giải Pháp X2 Doanh số & Giải Quyết Các Nỗi Đau Của Doanh Nghiệp” rất nhiều nội dung trọng điểm đã được diễn giả…
+                            </div>
+                        </div>
+                        <div class="post-blog col-12 col-lg-4">
+                            <a href="https://weupgroup.vn/bat-mi-diem-den-thu-vi-cho-chuyen-du-lich-he-weup-summer-2022/" class="post-thumnail">
+                                <img width="400" height="230" src="{% static 'assets/img/WeUp-to-chuc-du-lich-he-2022.png-350x230.jpg' %}" alt="dulich-2017" class="rounded-4">
+                            </a>
+                            <h5 class="post-title pt-3 ">
+                                <a href="https://weupgroup.vn/bat-mi-diem-den-thu-vi-cho-chuyen-du-lich-he-weup-summer-2022/" class="text-dark">Bật mí điểm đến thú vị cho chuyến du lịch hè WeUp Summer 2022</a>
+                            </h5>
+                            <div class="post-excerpt p-0">
+                                Sau 2 năm chịu ảnh hưởng của Covid, chương trình du lịch chào hè WeUp 2022 đã chính thức quay trở lại trong sự hào hứng của toàn thể thành…
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                    <div class="row">
+                        <div class="post-blog col-12 col-lg-4">
+                            <a href="https://weupgroup.vn/but-pha-gioi-han-break-the-limit-team-building-ket-thuc-nhung-du-am-con-de-lai/" class="post-thumnail">
+                                <img width="400" height="230" src="{% static 'assets/img/kick-off-la-gi-thumb-350x230.jpg' %}" alt="kickoff" class="rounded-4">
+                            </a>
+                            <h5 class="post-blog post-title pt-3 ">
+                                <a href="https://weupgroup.vn/kick-off-la-gi/" class="text-dark">Kick Off Là Gì? Trình Tự Tổ Chức Chương Trình Kick Off Thành Công</a>
+                            </h5>
+                            <div class="post-excerpt p-0">
+                                Kick off trong kinh doanh được coi là yếu tố quan trọng để quản trị con người, đồng thời thiết lập quan hệ tốt với đối tác. Vậy Kick off là…
+                            </div>
+                        </div>
+                        <div class=" post-blog col-12 col-lg-4">
+                            <a href="https://weupgroup.vn/cpm-la-gi/" class="post-thumnail">
+                                <img width="400" height="230" src="{% static 'assets/img/cpm-la-gi-thumb-350x230.jpg' %}" alt="dulich-2017" class="rounded-4">
+                            </a>
+                            <h5 class="post-title pt-3 ">
+                                <a href="https://weupgroup.vn/cpm-la-gi/" class="text-dark">CPM Là Gì? Phân Tích Ưu, Nhược Điểm Của Hình Thức Quảng Cáo Này</a>
+                            </h5>
+                            <div class="post-excerpt p-0">
+                                Hiện nay, CPM đang là hình thức quảng cáo được áp dụng phổ biến nhất trong Digital Marketing, giúp tăng doanh số và đảm bảo đạt được mục tiêu doanh…
+                            </div>
+                        </div>
+                        <div class="post-blog col-12 col-lg-4">
+                            <a href="https://weupgroup.vn/web-3-0-la-gi/" class="post-thumnail">
+                                <img width="400" height="230" src="{% static 'assets/img/web-3.0-la-gi-thumb-350x230.jpg' %}" alt="dulich-2017" class="rounded-4">
+                            </a>
+                            <h5 class="post-title pt-3 ">
+                                <a href="https://weupgroup.vn/web-3-0-la-gi/" class="text-dark">Web 3.0 Là Gì? Ưu, Nhược Điểm Và Các Tính Năng Đặc Biệt Của Web 3.0</a>
+                            </h5>
+                            <div class="post-excerpt p-0">
+                                Web 3.0 là gì? Đây là phiên bản Web đã được phát triển hoàn thiện nhất tính tới thời điểm hiện tại và có khả năng đem đến những trải…
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-partner">
+        <div class="container">
+            <div class="header-partner">
+                <div class="mb-5">
+                    <h2 class=" title-partner text-primary text-center pt-5 pb-2 fw-bold">ĐỐI TÁC</h2>
+                    <img src="{% static 'assets/img/icon-wave.svg' %}" class="rounded mx-auto d-block" alt="wave">
+                </div>
+            </div>
+            <div class="content-partner">
+                <div class="row justify-content-center">
+                    <div class="col-6 col-lg-2 ">
+                        <a href="https://autogroup.com.vn/quan-ly-doanh-nghiep-bang-phan-mem-weup-ERP-co-thuc-su-hieu-qua">
+                            <div class="partner-thumnail shadow rounded-4 me-3 mb-3 text-center">
+                                <img src="{% static 'assets/img/auto-group-1.png' %}" alt="auto">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <a href="https://thuocdantoc.vn/weup-erp-bi-quyet-quan-tri-doanh-nghiep-thanh-cong-cua-thuoc-dan-toc.html">
+                            <div class="partner-thumnail shadow rounded-4 me-3 mb-3 text-center">
+                                <img src="{% static 'assets/img/thuoc-dan-toc-1.png' %}" alt="auto">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <a href="https://dominhduong.com/do-minh-duong-thanh-cong-nang-tam-thuong-hieu-nho-ung-dung-erp-for-healthcare-34545.html">
+                            <div class="partner-thumnail shadow rounded-4 me-3 mb-3 text-center">
+                                <img src="{% static 'assets/img/do-minh-duong.png' %}" alt="auto">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <a href="https://drvitamin.vn/">
+                            <div class="partner-thumnail shadow rounded-4 me-3 mb-3 text-center">
+                                <img src="{% static 'assets/img/Drvitamin.png' %}" alt="auto">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <a href="https://trungtamduoclieu.com/">
+                            <div class="partner-thumnail shadow rounded-4 me-3 mb-3 text-center">
+                                <img src="{% static 'assets/img/vietfarm.png' %}" alt="auto">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <a href="https://vidental.vn/">
+                            <div class="partner-thumnail shadow rounded-4 me-3 mb-3 text-center">
+                                <img src="{% static 'assets/img/13.png' %}" alt="auto">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <a href="https://vietmecgroup.com/">
+                            <div class="partner-thumnail shadow rounded-4 me-3 mb-3 text-center">
+                                <img src="{% static 'assets/img/vietmec.png' %}" alt="auto">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <a href="https://nhatnamyvien.com/ung-dung-weup-erp-for-healthcare-nhat-nam-chiem-tron-su-tin-yeu-cua-khach-hang-41033.html">
+                            <div class="partner-thumnail shadow rounded-4 me-3 mb-3 text-center">
+                                <img src="{% static 'assets/img/nhat-nam-1.png' %}" alt="auto">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <a href="https://golfgroup.com.vn/">
+                            <div class="partner-thumnail shadow rounded-4 me-3 mb-3 text-center">
+                                <img src="{% static 'assets/img/gofl-1.png' %}" alt="auto">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <a href="https://golfgroup.com.vn/">
+                            <div class="partner-thumnail shadow rounded-4 me-3 mb-3 text-center">
+                                <img src="{% static 'assets/img/Drbeauty.png' %}" alt="auto">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <a href="https://trungtamduoclieu.com/">
+                            <div class="partner-thumnail shadow rounded-4 me-3 mb-3 text-center">
+                                <img src="{% static 'assets/img/quan-dan-102.png' %}" alt="auto">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <a href="https://benhvienfavina.vn/thanh-cong-den-tu-su-khac-biet-benh-vien-favina-da-lam-duoc-nho-co-weup-erp-34294.html">
+                            <div class="partner-thumnail shadow rounded-4 me-3 mb-3 text-center">
+                                <img src="{% static 'assets/img/phong-kham-favina.png' %}" alt="auto">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %} 
+

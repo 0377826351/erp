@@ -1,0 +1,91 @@
+{% extends '../layout/default.html' %}
+{% block content %}
+<div class="card card-primary card-outline">
+<div class="content-wrapper">
+<section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>{{title}}</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="/home-admin">Home</a></li>
+            <li class="breadcrumb-item active">{{title}}</li>
+          </ol>
+        </div>
+      </div>
+    </div><!-- /.container-fluid -->
+  </section>
+
+  <section class="content">
+    <div class="container-fluid">
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-4">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+              <div class="card card-primary">
+                <div class="card-header">
+                  <h2 class="card-title"><b>{{title}}</b></h2>
+                </div>
+                <div class="card-body box-profile">
+
+                  <div class="form-group">
+                    <label>Title</label>
+                    <input  type="text" class="form-control" name="title" placeholder="Title" required></input>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label>Alias Article</label>
+                    <input  type="text" class="form-control" name="alias_article" placeholder="Alias Article" required></input>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleSelectRounded0">Category</label>
+                    <select class="custom-select rounded-0" id="exampleSelectRounded0" name="category">
+                      {% for cate in list_cate %}
+                      <option value="{{cate.alias_category}}" >{{cate.name}}</option>
+                      {% endfor %}
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Content</label>
+                    <textarea class="form-control" name="content" rows="3" placeholder="Enter ..." ></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleSelectRounded0">Type</label>
+                    <select class="custom-select rounded-0" id="exampleSelectRounded0" name="type">
+                      {% for item in types %}
+                      <option value="{{item.0}}">{{item.1}}</option>
+                      {% endfor %}
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <div class="input-group">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFile" name="image" required>
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h5> {{ noti }} </h5>
+                  <div class="mt-3">
+                    <button type="submit" class="btn btn-primary float-right"><b>Save</b></button>
+                    <button type="reset" class="btn btn-primary float-right mr-3"><b>Reset</b></button>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+{% endblock %} 

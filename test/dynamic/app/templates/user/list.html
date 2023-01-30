@@ -1,0 +1,71 @@
+{% extends 'default.html' %}
+{% load alert %}
+{% load components %}
+{% block content %}
+
+{% if config_page_header %}
+    {% render_page_header config_page_header %}
+{% endif %}
+{% csrf_token %}
+<div class="page-content py-3">
+    <div class="container-fluid">
+        <div class="card border-0">
+            <div class="card-body">
+                {% if messages %} {% flash_message messages %} {% endif %}
+                {% render_filter_box form=form %}
+                <div class="table-content table-responsive mb-3">
+                    <table class="table-bordered table table-hover table-nowrap mb-0" id="tableListItems" url-name="{% url url_name %}" delete-url="{% url url_name|add:'.delete' %}">
+                        <thead class="table-light">
+                            <tr>
+                                <th class="width-30"><input class="form-check-input table-check-all" type="checkbox" /></th>
+                                <th class="width-30">#</th>
+                                <th class="width-80">Hành động</th> 
+                                <th>Tên</th> 
+                                <th>Số điện thoại</th>
+                                <th>Email</th>
+                                <th>Tên đăng nhập</th>
+                                <th>Trạng thái</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% if items %}
+                                {% for item in items %}
+                                    <tr data-id="id_{{ item.id }}">
+                                        <td>
+                                            <input name="ids[]" class="form-check-input table-check-item" value="{{ item.id }}" type="checkbox" />
+                                        </td>
+                                        <td>{{ forloop.counter }}</td>
+                                        <td>
+                                            {% if not item.is_superuser %}
+                                            <a href="{% url url_name|add:'.change' id=item.id %}" class="action-icon"><i class="fa-solid fa-pen-to-square"></i></a>
+                                            <a class="action-icon action-delete-item delete-confirm" value="{{ item.id }}" data-bs-toggle="modal" data-bs-target="#confirmDeleteModel"><i class="fa-solid fa-trash"></i></a>
+                                            {% endif %}
+                                        </td>
+                                        <td><a href="{% url url_name|add:'.change' id=item.id %}" class="fw-bold">{{ item.name }}</a></td>
+                                        <td>{{ item.phone }}</td>
+                                        <td>{{ item.email }}</td>
+                                        <td>{{ item.username }}</td>
+                                        <td>
+                                            {% if item.is_active %}
+                                                <span class="badge bg-success bg-gradient text-light">Hoạt động</span>
+                                            {% else %}
+                                                <span class="badge bg-danger bg-gradient text-light">Ngừng hoạt động</span>
+                                            {% endif %}
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            {% else %}
+                                <tr><td colspan="100%">Không có dữ liệu.</td></tr>
+                            {% endif %}
+                        </tbody>
+                    </table>
+                </div> <!-- end table-responsive-->
+                {% pagination_tag items page_range get_data pagination url_name %}
+            </div>        
+        </div>
+    </div>
+</div>
+{% render_confirm_dialog id="confirmDeleteModel" type="delete" %}
+
+{% endblock content %}
+

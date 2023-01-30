@@ -1,0 +1,81 @@
+{% extends 'default.html' %}
+{% load static %}
+{% block content %}      
+    <div class="title-featured">
+        <div class="container">
+            <div class="widget-header">
+                <div class="widget-title">
+                    <p class="text-center pt-4 fw-bold">HOTLINE - 08 2245 8899 ( 7:00 - 22:00 )</p>
+                    <img src="{% static 'assets/img/icon-wave-white.svg' %}" class="rounded mx-auto d-block pb-4" alt="wave">
+                    <form action="#" class="form-inline pb-4">
+                        <div class="form-group form-row">
+                            <div class="col-7 mx-auto">
+                                <div class="input-group input-group-lg mb-3">
+                                    <button class="btn-search-question border-0" type="button" id="button-addon1">
+                                        <svg data-name="Group 412" xmlns="http://www.w3.org/2000/svg' %}" width="20" height="20" viewBox="-2 -2 18 18">
+                                            <path data-name="Path 651" d="M17.066,16.054l-4.988-4.988a6.81,6.81,0,1,0-1.012,1.012l4.988,4.988a.358.358,0,0,0,.506,0l.506-.506A.358.358,0,0,0,17.066,16.054ZM6.8,12.162A5.366,5.366,0,1,1,12.162,6.8,5.372,5.372,0,0,1,6.8,12.162Z" transform="translate(0 0)" fill="#007893"></path>
+                                        </svg>
+                                    </button>
+                                    <input type="text" class="input-search form-control" placeholder="Bạn cần trợ giúp điều gì...?">
+                                    </div>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="container">
+            <nav class="breadcrumb">
+                <span>
+                    <span>
+                        <a href="https://weupgroup.vn/">Home</a>
+                        >>
+                        <span class="breadcrumb-last">Câu hỏi thường gặp</span>
+                    </span>
+                </span>
+            </nav>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="sidebar-help shadow rounded-4">
+                        <div class="sb-help-header">Trợ Giúp</div>
+                        <div class="hr d-none d-md-block"></div>
+                        <div class="sb-help-content d-none d-md-block">
+                            <ul class="menu-help">
+                                <li class="menu-help-item">
+                                    <a href="https://weupgroup.vn/chinh-sach-chung/">
+                                        <span class="text-dark">Chính Sách Chung</span>
+                                    </a>
+                                </li>
+                                <li class="menu-help-item">
+                                    <a href="https://weupgroup.vn/dieu-khoan-su-dung/">
+                                        <span class="text-dark">Điều khoản sử dụng</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <h1 class="page-title-q ms-3">Câu Hỏi Thường Gặp</h1>
+                    <div class="list-faq ms-3">
+                        {% for ques in list_questions %}
+                        <div class="item-faq">
+                            <div class="faq-name fs-5 ps-5 pe-5 mb-2 fw-bold">
+                                <i class="fa-solid fa-circle-arrow-down pe-3 fs-3"></i>
+                                {{ ques.question }}
+                            </div>
+                            <div class="faq-content ps-5 pe-5" style="display:none;">
+                                {{ ques.answer }}    
+                            </div>
+                        </div>
+                        {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %} 

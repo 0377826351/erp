@@ -1,0 +1,12 @@
+.auth-layout{
+    min-height: 100vh;
+    background-color: var(--bg-primary);
+    background-image: url('../img/bg-pattern.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bg-pattern { background-image: url('../img/bg-pattern-2.png'); background-size: cover; }
+.page-auth .auth-logo img{ height: 22px;}
+.page-auth .text-muted{ font-size: 14px;}
+.page-auth .input-group .input-group-text{ min-width: 46px;}

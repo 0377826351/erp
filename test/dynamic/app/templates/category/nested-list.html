@@ -1,0 +1,41 @@
+{% extends 'default.html' %}
+{% load alert %}
+{% load components %}
+{% block content %}
+
+{% if config_page_header %}
+    {% render_page_header config_page_header %}
+{% endif %}
+{% csrf_token %}
+<div class="page-content py-3">
+    <div class="container-fluid">
+        <div class="card border-0">
+            <div class="card-body">
+                {% if messages %} {% flash_message messages %} {% endif %}
+                {% if items %}
+                    <div class="nested-list" style="margin-left:15%" id="listItems" url-name="{% url url_name %}" delete-url="{% url url_name|add:'.delete' %}">
+                        {% for item in items %}
+                            <div class="card border-primary mb-1" style="max-width: 20rem; margin-left: {% widthratio item.level 1 5 %}%;">
+                                <div class="card-body d-flex justify-content-between">
+                                   
+
+                                    <b class="card-text"> <a href="{% url url_name|add:'.change' id=item.id %}" class="action-icon"> {{ item.name }} </a></b>
+                                    <div class="">
+                                        <input name="ids[]" class="d-none form-check-input table-check-item" value="{{ item.id }}" type="checkbox" />
+                                        <a href="{% url url_name|add:'.add' %}?type={{get_data.type}}&parent_id={{item.id}}" class="action-icon"> <i class="fa-solid fa-plus-circle "></i></a>
+                                        <a href="{% url url_name|add:'.change' id=item.id %}" class="action-icon"> <i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a class="action-icon action-delete-item delete-confirm" value="{{ item.id }}" data-bs-toggle="modal" data-bs-target="#confirmDeleteModel"> <i class="fa-solid fa-trash"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                <center><h3>Không có dữ liệu!</h3></center>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% render_confirm_dialog id="confirmDeleteModel" type="delete" %}
+{% endblock content %}

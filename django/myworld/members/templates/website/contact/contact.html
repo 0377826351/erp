@@ -1,0 +1,113 @@
+{% extends 'default.html' %}
+{% load static %}
+{% block content %}
+    <div class="title-featured">
+        <div class="container">
+            <div class="widget-header">
+                <div class="widget-title">
+                    <p class="text-center pt-3 fw-bold">BLOG</p>
+                    <img src="{% static 'assets/img/icon-wave-white.svg' %}" class="rounded mx-auto d-block pb-4" alt="wave">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="container">
+            <nav class="breadcrumb">
+                <span>
+                    <span>
+                        <a href="https://weupgroup.vn/">Home</a>
+                        >>
+                        <span class="breadcrumb-last">Liên hệ</span>
+                    </span>
+                </span>
+            </nav>
+            <div class="row">
+                <div class="col-12 col-md-4 order-2 order-lg-1">
+                    <div class="border mb-4 rounded-3 item_support">
+                        <div class="row p-3">
+                            <div class="col-3 align-self-center">
+                                    <img src="{% static 'assets/img/icon-contact-1.jpg' %}" alt="address" class="img-responsive">
+                            </div>
+                            <div class="col-9">
+                                <div class="address_title">
+                                    <h4>Địa chỉ</h4>
+                                </div>
+                                <div class="address_desc">
+                                    <p>
+                                        Tầng 18, Toà nhà Viwaseen, 48 Tố Hữu, Nam Từ Liêm, Hà Nội
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border mb-4 rounded-3 item_support">
+                        <div class="row p-3">
+                            <div class="col-3 align-self-center">
+                                    <img src="{% static 'assets/img/icon-contact-2.jpg' %}" alt="phone" class="img-responsive">
+                            </div>
+                            <div class="col-9">
+                                <div class="phone_title">
+                                    <h4>Điện thoại</h4>
+                                </div>
+                                <div class="phone_desc">
+                                    <p>
+                                        0866 739 388
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border mb-4 rounded-3 item_support">
+                        <div class="row p-3">
+                            <div class="col-3 align-self-center">
+                                    <img src="{% static 'assets/img/icon-contact-3.jpg' %}" alt="mail" class="img-responsive">
+                            </div>
+                            <div class="col-9">
+                                <div class="mail_title">
+                                    <h4>Email, Website</h4>
+                                </div>
+                                <div class="mail_desc">
+                                    <p>
+                                        weupgroup.vn <br>
+                                        contact@weupgroup.vn
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 order-1 order-lg-2">
+                <h1 class="page-title mb-4 text-primary">Liên hệ với chúng tôi</h1>
+                <form>
+                    <div class="row">
+                    <div class="col-6">
+                        <input type="text" id="name" class="form-control rounded-pill mb-3" placeholder="Họ tên(*)" >
+                    </div>
+                    <div class="col-6">
+                        <input type="text" id="m ail" class="form-control rounded-pill mb-3" placeholder="Địa chỉ Email">
+                    </div>
+                    <div class="col-6">
+                        <input type="text" id="phone" class="form-control rounded-pill mb-2" placeholder="Số điện thoại(*)" >
+                    </div>
+                    <div class="col-6">
+                        <input type="text" id="address" class="form-control rounded-pill mb-2" placeholder="Địa chỉ liên hệ(*)" >
+                    </div>
+                    <div class="col-12">
+                        <label for="content"></label>
+                        <textarea name="content" id="content" placeholder="Nhập nội dung của bạn" cols="30" rows="4" class="form-control rounded-4 mb-3"></textarea>
+                    </div>
+                    <div class="send-info d-flex justify-content-end">
+                        <button type="button" class="btn-send btn btn-primary rounded-5 fw-bold" disabled>GỬI THÔNG TIN</button>
+                    </div>
+                    <div class="col-12 mt-3 notification fs-5">
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="iframe-maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7449.727054320154!2d105.794577!3d20.998107!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9f5e187d55897859!2zVMOyYSBuaMOgIHbEg24gcGjDsm5nIHZpd2FzZWVuIHRvd2Vy!5e0!3m2!1svi!2sus!4v1642393864736!5m2!1svi!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7449.727054320154!2d105.794577!3d20.998107!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9f5e187d55897859!2zVMOyYSBuaMOgIHbEg24gcGjDsm5nIHZpd2FzZWVuIHRvd2Vy!5e0!3m2!1svi!2sus!4v1642393864736!5m2!1svi!2sus" class="lazyloaded" data-was-processed="true"></iframe>
+    </div>
+{% endblock %} 

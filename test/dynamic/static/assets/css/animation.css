@@ -1,0 +1,8 @@
+@keyframes fadeInUp {
+    from { top: calc(100% + 50px); }
+    to { top: 100%; }
+}
+@keyframes fadeInUpSecond {
+    from { top: calc(100% + 50px); }
+    to { top: 0; }
+}

@@ -1,0 +1,15 @@
+{% for post in page_obj %}
+    <div class="col-12 col-lg-4">
+        <div class="post-blog">
+            <a href="/bai-viet/{{ post.alias_article }}-{{post.id}}">
+                <img width="400" height="230" src="{{ post.image.url }}" alt="{{ post.title }}" >
+            </a>
+            <h5 class="post-title pt-3 ">
+                <a href="/bai-viet/{{ post.alias_article }}-{{post.id}}" class="text-dark">{{ post.title|upper }}</a>
+            </h5>
+            <div class="post-excerpt p-0">
+                {{ post.content }}
+            </div>
+        </div>
+    </div>
+{% endfor %}

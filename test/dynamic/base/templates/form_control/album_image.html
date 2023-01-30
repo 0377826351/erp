@@ -1,0 +1,16 @@
+<div class="album-image img-thumbnail">
+    <div class="row">
+        {% if widget.value %}
+            {% for value in widget.value|get_string_as_list %}
+                <div class="col-6 col-md-3 col-lg-2 my-1">
+                    <img name="{{ widget.name }}" src="{{ value|get_src_image }}" {% include "django/forms/widgets/attrs.html" %}>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="col-6 col-md-3 col-lg-2 my-1">
+                <img name="{{ widget.name }}" src="{{ widget.value|get_src_image }}" {% include "django/forms/widgets/attrs.html" %}>
+            </div>
+        {% endif %}
+    </div>
+</div>
+<input type="file" name="upload_{{widget.name}}" class="form-control" id="id_upload_{{widget.name}}" accept="image/*" multiple>

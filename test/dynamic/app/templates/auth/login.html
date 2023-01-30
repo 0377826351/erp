@@ -1,0 +1,58 @@
+{% extends "auth.html" %}
+{% load i18n static %}
+
+{% block content %}
+
+<div class="page-auth pt-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6 col-xl-4">
+                <div class="card shadown bg-pattern">
+                    <div class="card-body px-4 py-5">
+                        <div class="text-center w-75 m-auto">
+                            <div class="auth-logo text-center">
+                                <img src="{% static 'assets/img/logo-dark.png' %}">
+                            </div>
+                            <p class="text-muted mb-4 mt-3">Nhập tài khoản và mật khẩu của bạn để đăng nhập vào hệ thống.</p>
+                        </div>
+
+                        <form method="post">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label class="form-label">Tài khoản</label>
+                                <input name="username" type="text" class="form-control" value="{{ form_data.username }}" placeholder="Nhập tài khoản" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Mật khẩu</label>
+                                <div class="input-group input-group-merge">
+                                    <input name="password" type="password" class="form-control" placeholder="Nhập mật khẩu" required>
+                                    <div class="input-group-text">
+                                        <i class="fa-light fa-eye-slash"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input name="remember_me" type="checkbox" class="form-check-input" id="remember_me" checked="checked">
+                                    <label class="form-check-label" for="remember_me">Ghi nhớ đăng nhập</label>
+                                </div>
+                            </div>
+                            
+                            {% if message %}
+                            <div class="alert alert-danger">{{ message }}</div>
+                            {% endif %}
+
+                            <div class="text-center d-grid pt-2 mb-2">
+                                <button class="btn btn-primary" type="submit">{% translate "Đăng nhập" %}</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+
+{% endblock %}

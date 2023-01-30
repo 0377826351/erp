@@ -1,0 +1,12 @@
+<div class="form-check form-switch">
+    <input 
+        class="form-check-input"
+        role="switch"
+        type="checkbox"    
+        name="{{ widget.name }}"
+        {% if widget.value != None %} 
+            value="{{ widget.value|stringformat:'s' }}"
+        {% endif %}
+        {% include "django/forms/widgets/attrs.html" %}
+    >
+</div>
